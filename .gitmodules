@@ -1,0 +1,3 @@
+[submodule "magic-bot"]
+	path = magic-bot
+	url = git@github.com:KingArthurZ3/magic-bot.git
