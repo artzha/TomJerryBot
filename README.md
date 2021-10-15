@@ -7,7 +7,9 @@ Developed by Arthur Zhang, Joonghyun Lee, Matthew Morissey, Alan Tang
 
 ## Abstract
 
-The Tom and Jerry Bot EECS 467 final design project consists of a tracker (Tom) bot with the goal of finding and following a target (Jerry) bot. This project uses dynamic path planning and SLAM obstacle avoidance to find the JerryBot, and computer vision to follow its movement. TomBot can track down the JerryBot using a particle filter to predict its current location, and continuously follow the JerryBot while in the field of view. This project has a wide range of applications, all in the form of an automated tracker bot which can find a dynamic target bot.
+The Tom and Jerry Bot EECS 467 final design project consists of a tracker (Tom) bot with the goal of finding and following a target (Jerry) bot. This project uses dynamic path planning and SLAM obstacle avoidance to find the JerryBot, and computer vision to follow its movement. TomBot can track down the JerryBot using a particle filter to predict its current location, and continuously follow the JerryBot while in the field of view. This project has a wide range of applications, all in the form of an automated tracker bot which can find a dynamic target bot. 
+
+**Source Code** While we are unable to publish the source code publicly as this is an academic project, I would happy to walk through our code to interested individuals on request.
 
 ### Technical Summary
 
