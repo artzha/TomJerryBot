@@ -1,7 +1,7 @@
 # Tom and Jerry Bot
 Developed by Arthur Zhang, Joonghyun Lee, Matthew Morissey, Alan Tang
 
-![TomBot and JerryBot](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/title.png)
+![TomBot and JerryBot](./docs/title.png)
 |:--:| 
 | *Figure 1. TomBot (pictured on the right)* |
 
@@ -20,7 +20,7 @@ The Tom and Jerry Bot EECS 467 final design project consists of a tracker (Tom) 
 
 ## Project Architecture
 
-![Architecture](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/System-Architecture.jpg)
+![Architecture](./docs/System-Architecture.jpg)
 |:--:| 
 | *Figure 2. System Architecture* |
 
@@ -48,11 +48,11 @@ There are 4 motors mounted on the magic chassis with the wheels attached. To com
 
 The remainder of the hardware used is similar to the hardware stack used on the MBot project. This includes the Raspberry Pi, LiDAR, and the low voltage Battery. The Realsense F200 Camera is used for object detection directly with the Nvidia Jetson Nano through a USB port. LiDAR directly connects to the RPi via USB. The Nvidia Jetson, Raspberry Pi, and Beaglebone communicate using LCM.
 
-![Electronics](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/electronics.jpg)
+![Electronics](./docs/electronics.jpg)
 |:--:| 
 | *Figure 3. Computing Hardware Layout* |
 
-![Sensors](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/sensors.jpg)
+![Sensors](./docs/sensors.jpg)
 |:--:| 
 | *Figure 4. Perception Hardware Layout* |
 
@@ -70,7 +70,7 @@ The path planning algorithm should be able to handle exploring dynamic environme
 
 The TomBot uses a particle filter that processes output from the JerryBot object detection model to intelligently influence the particles. The following diagram models the actions of our target particles.
 
-![Particle Filter](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/particle-filter.jpg)
+![Particle Filter](./docs/particle-filter.jpg)
 |:--:| 
 | *Figure 5. Particle Filter Properties* |
 
@@ -106,7 +106,7 @@ While searching for JerryBot, TomBot creates a queue of camera scan batches that
 
 For cells in the top batch with a nonzero target likelihood, these cells are added to the next batch (if it exists) so that both of these batches can be updated in the next iteration. This update process creates a breadcrumb-like trail on the target likelihood grid.
 
-![Breadcrumb Trail](https://github.com/KingArthurZ3/magic-bot/blob/main/docs/breadcrumb-trail.jpg)
+![Breadcrumb Trail](./docs/breadcrumb-trail.jpg)
 |:--:| 
 | *Figure 6. "Breadcrumb" Trail Sequence* |
 
